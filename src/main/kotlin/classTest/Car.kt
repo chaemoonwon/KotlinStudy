@@ -1,0 +1,4 @@
+package classTest
+
+class Car {
+}
