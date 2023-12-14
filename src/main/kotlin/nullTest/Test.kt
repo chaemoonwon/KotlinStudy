@@ -1,5 +1,6 @@
 package nullTest
 
+
 fun main() {
     var a:Int = 1
 
@@ -19,6 +20,10 @@ fun main() {
 
 
     println( testSafeCall2("hi2"))
+
+    var nullable: String? = null
+    var size = nullable?.length
+    println("${size}")
 
 }
 
@@ -41,4 +46,10 @@ fun testSafeCall2(str:String?) : Int? {
     var resultNull2:Int? =str?.length?:0 //?:을 사용하면 null일 경우 오른쪽의 값이 반환, 그렇지 않을 경우 해당 프로퍼티 값이 출력
 
     return resultNull2
+
+
 }
+
+fun testCall3(){
+
+};
